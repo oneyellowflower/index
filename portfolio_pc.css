@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +11,198 @@
     /* border: 1px solid red; */
 }
 
+body{
+    background-image: url(/index/이미지/질감2.jpg);
+    font-family: 'Shippori Mincho B1', serif;
+}
 body > div{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(239, 223, 197, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body > div > div{
+    width: 95%;
+    height: 95%;
+    border: 1px solid  #000;
+    border-radius: 30px;
+}
+body .page1 > div > p{
+    background-image: url(/index/이미지/체크배경.jpg);
+    width: 6%;
+    height: 100vh;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+body .page1 > div > div:nth-child(2){
+    width: 48%;
+    height: 30%;
+    text-align: center;
+    color: #4E2F2F ;
+    background: #EADDC6;
+    border: 5px solid #9B8C79;
+    position: absolute;
+    top: 24.74%;
+    right: 27.64%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+body .page1 > div > div:nth-child(2) > p{
+    font-size: 100px;
+}
+body .page1 > div > div:nth-child(2) > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+body .page1 > div > div:nth-child(2) > div .line{
+    width: 60px;
+    height: 1px;
+    background-color: #4E2F2F;
+}
+body .page1 > div > div:last-child{
+    width: 95%;
+    height: 100%;
+    background-image: url(/index/이미지/1페이지\ 배경화면.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+}
+body .page1 .list{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+body .page1 .list .tab{
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    height: 15%;
+    background: #9B8C79;
+    border: 2px solid #593D26;
+    border-radius: 15px 0 0 15px;
+    padding: 13px 33px;
+}
+/* ------------------------------------------2페이지----------------------------------- */
+.page2{
+    background-color: #fff;
+}
+.page2 > div{
+    width: 95%;
+    height: 95%;
+    border: 1px solid  #000;
+    border-radius: 30px;
+    position: absolute;
+}
+.page2 > div > div:first-child{
+    background-image: url(/index/이미지/체크배경.jpg);
+    width: 101vw;
+    height: 6%;
+    background-size: contain;
+    position: absolute;
+    left: -3%;
+    top: 2%;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page2 > div > div:first-child .tab{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    width: 12%;
+    height: 85%;
+    background: #9B8C79;
+    border: 2px solid #593D26;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 > div > div{
+    display: flex;
+}
+.page2 > div > div:nth-child(2){
+    width: 50%;
+    height: 100%;
+    background-image: url(/index/이모지/이모지_하트.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    z-index: 1;
+}
+.page2 > div > div:nth-child(2) p{
+    font-size: 80px;
+    color: #000;
+    font-family: 'Rubik Puddles';
+    /* padding: 30% 0 0 8%; */
+    position: absolute;
+    top: 23%;
+    left: 6%;
+}
+.page2 > div > div:last-child{
     width: 100%;
     height: 100%;
-    background-color:  rgba(239, 223, 197, 1);
+    background-image: url(/index/이미지/2페이지\ 배경화면.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+    z-index: 2;
+}
+.page2 > div .catch{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 41%;
+    left: 49%;
+    text-align: center;
+}
+.page2 > div .catch > div:first-child{
+    font-size: 60px;
+    font-family: 'Waterfall';
+    padding: 10px 0px;
+}
+.page2 > div .catch > div:last-child{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 10px 0px;
+}
+.page2 > div .catch{
+    width: 40%;
+}
+.page2 > div .catch > div{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #EFDFC5;
+    border-radius: 30px;
+
+}
+.page2 > div .catch .back{
+    border: 1px solid #593D26;
+    border-radius: 30px;
+    width: 95%;
+    height: 95%;
+    padding: 10px
 }
