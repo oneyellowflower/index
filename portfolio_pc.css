@@ -209,6 +209,8 @@ body .page1 .list .tab{
 /* ------------------------3페이지---------------------- */
 .page3{
     position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 .page3 > div{
     display: flex;
@@ -254,6 +256,9 @@ body .page1 .list .tab{
     width: 40%;
     height: 100vh;
     padding-top: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .page3 .le_text > div{
     display: flex;
@@ -323,4 +328,29 @@ body .page1 .list .tab{
     left: 44%;
     z-index: 2;
     font-size: 20px;
+}
+/* --------------------------------4페이지------------------------------ */
+.page4{
+    width: 100%;
+    height: 100vh;
+}
+.page4 > div{
+    width: 95%;
+    height: 95%;
+    border: 1px solid  #000;
+    border-radius: 30px;
+    position: absolute;
+}
+.page4 .check{
+    background-image: url(/index/이미지/체크배경.jpg);
+    width: 101vw;
+    height: 6%;
+    background-size: contain;
+    position: absolute;
+    left: -2%;
+    top: 4%;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
