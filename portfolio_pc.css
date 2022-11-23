@@ -30,8 +30,6 @@ body > div{
 body .line{
     width: 95%;
     height: 95%;
-    border: 1px solid  #000;
-    border-radius: 30px;
 }
 body .page1{
     width: 100%;
@@ -51,20 +49,21 @@ body .page1 > div > p{
     z-index: 1;
 }
 body .page1 > div > div:nth-child(2){
-    width: 48%;
-    height: 30%;
+    /* width: 48%;
+    height: 30%; */
     text-align: center;
     color: #4E2F2F ;
     background: #EADDC6;
     border: 5px solid #9B8C79;
     position: absolute;
     top: 24.74%;
-    right: 27.64%;
+    left: 23%;
+    right: 23%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     z-index: 1;
+    padding: 5%;
 }
 body .page1 > div > div:nth-child(2) > p{
     font-size: 80px;
@@ -83,8 +82,7 @@ body .page1 > div > div:nth-child(2) > div .line{
 body .page1 > div > div:last-child{
     width: 95%;
     height: 95%;
-    background-image: url(이미지/1페이지\ 배경화면.png);
-    background-image: url(이미지/1페이지\ 배경화면.png);
+    background-image: url(이미지/1페이지\ 배경화면2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +123,7 @@ body .page1 .list .tab:hover{
     justify-content: center;
     
 }
-.page2 > div{
+.page2 > .line{
     width: 95%;
     height: 95%;
     border: 1px solid  #000;
@@ -135,7 +133,7 @@ body .page1 .list .tab:hover{
 .page2 > div > div:first-child{
     background-image: url(이미지/체크배경.jpg);
     width: 100vw;
-    height: 6%;
+    height: 8%;
     background-size: contain;
     position: absolute;
     left: -3%;
@@ -149,7 +147,6 @@ body .page1 .list .tab:hover{
     font-size: 20px;
     text-align: center;
     color: #fff;
-    width: 12%;
     height: 85%;
     background: #9B8C79;
     border: 2px solid #593D26;
@@ -157,36 +154,45 @@ body .page1 .list .tab:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 13px 33px;
 }
 .page2 > div > div{
     display: flex;
 }
 .page2 > div > div:nth-child(2){
-    width: 50%;
+    width: 60%;
     height: 100%;
-    background-image: url(이모지/이모지_하트.gif);
+    /* background-image: url(이모지/이모지_하트.gif);
     background-repeat: no-repeat;
     background-position: bottom;
     position: absolute;
-    z-index: 1;
+    z-index: 1; */
 }
-.page2 > div > div:nth-child(2) p{
+.page2 > div > div:nth-child(2) p:first-child{
     font-size: 80px;
     color: #000;
     font-family: 'Rubik Puddles';
     /* padding: 30% 0 0 8%; */
     position: absolute;
-    top: 23%;
+    top: 17%;
     left: 6%;
+}
+.page2 > div > div:nth-child(2) p:last-child{
+    background-image: url(이모지/이모지_하트.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
 }
 .page2 > div > div:last-child{
     width: 100%;
     height: 100%;
     background-image: url(이미지/2페이지\ 배경화면.png);
-    background-size: contain;
+    background-size: 100% 90%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    top: 0%;
     right: 2%;
     z-index: 2;
 }
@@ -256,7 +262,7 @@ body .page1 .list .tab:hover{
 .page3 .check{
     background-image: url(이미지/체크배경.jpg);
     width: 100vw;
-    height: 6%;
+    height: 8%;
     background-size: contain;
     position: absolute;
     left: -3%;
@@ -270,7 +276,6 @@ body .page1 .list .tab:hover{
     font-size: 20px;
     text-align: center;
     color: #fff;
-    width: 12%;
     height: 85%;
     background: #9B8C79;
     border: 2px solid #593D26;
@@ -278,6 +283,7 @@ body .page1 .list .tab:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 13px 33px;
 }
 .page3 .sen{
     display: flex;
@@ -424,7 +430,7 @@ body .page1 .list .tab:hover{
 .page4 .check{
     background-image: url(이미지/체크배경.jpg);
     width: 100vw;
-    height: 6%;
+    height: 8%;
     background-size: contain;
     position: absolute;
     left: -3%;
@@ -438,7 +444,6 @@ body .page1 .list .tab:hover{
     font-size: 20px;
     text-align: center;
     color: #fff;
-    width: 12%;
     height: 85%;
     background: #9B8C79;
     border: 2px solid #593D26;
@@ -446,6 +451,7 @@ body .page1 .list .tab:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 13px 33px;
 }
 .page4 .line > div:last-child{
     width: 100%;
