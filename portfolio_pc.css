@@ -79,7 +79,7 @@ body .page1 > div > div:nth-child(2) > div .line{
 }
 body .page1 > div > div:last-child{
     width: 95%;
-    height: 100%;
+    height: 95%;
     background-image: url(/index/이미지/1페이지\ 배경화면.png);
     background-size: contain;
     background-repeat: no-repeat;
