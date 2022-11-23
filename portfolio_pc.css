@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import 'animate.css';
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
@@ -105,6 +108,10 @@ body .page1 .list .tab{
     border-radius: 15px 0 0 15px;
     padding: 13px 33px;
 }
+body .page1 .list .tab.on{
+    color: #000;
+    background: #807f7d;
+}
 /* ------------------------------------------2페이지----------------------------------- */
 .page2{
     background-color: #fff;
@@ -188,19 +195,25 @@ body .page1 .list .tab{
     top: 41%;
     left: 49%;
     text-align: center;
+    width: 40%
 }
 .page2 > div .catch > div:first-child{
     font-size: 60px;
     font-family: 'Waterfall';
     padding: 10px 0px;
 }
+/* .page2 > div .catch > div:first-child .animate__fadeIn{
+    display: inline-block;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+} */
 .page2 > div .catch > div:last-child{
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     padding: 10px 0px;
-}
-.page2 > div .catch{
-    width: 40%;
 }
 .page2 > div .catch > div{
     width: 100%;
@@ -269,8 +282,8 @@ body .page1 .list .tab{
 }
 .page3 .sen > div:first-child > div:first-child{
     width: 100%;
-    height: 50%;
-    padding: 48% 9% 14% 49%;
+    height: 40%;
+    padding: 48% 2% 15% 52%;
 }
 .page3 .sen > div:first-child{
     width: 40%;
@@ -332,25 +345,24 @@ body .page1 .list .tab{
 }
 .page3 .ri_pic{
     width: 70%;
-    height: 103%;
-    margin-top: -2.2%;
-    margin-right: -2.1%;
+    height: 100%;
     overflow: hidden;
+    border-radius: 0 30px 30px 0;
 }
 .page3 .ri_pic > div{
     background-image: url(이미지/반응형\ 배경.png);
     width: 100%;
     height: 100%;
     /* transform: scale(1); */
-    transition: all linear 1s;
-    background-size: 100%;
+    transition: all linear 0.6s;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .page3 .ri_pic > div:hover{
     /* transform: scale(1.5); */
-    background-size: 150%;
-    transition: all linear 1s;
+    background-size: 200%;
+    transition: all linear 0.6s;
 }
 .page3 .ri_pic > div > div{
     background-color: rgba(255, 255, 255, 0.8);
@@ -368,18 +380,26 @@ body .page1 .list .tab{
     width: 90%;
     height: 100%;
 }
+.page3 .ri_pic .animate__swing:hover{
+    display: inline-block;
+    animation: swing;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
 .page3 .ri_pic img{
     width: 120px;
     height: 110px;
     position: absolute;
     top: 62%;
-    left: 7%;
+    left: 42%;
     z-index: 2;
 }
 .page3 .ri_pic > div p:nth-child(3){
     position: absolute;
-    top: 73%;
-    left: 4%;
+    top: 76%;
+    left: 40%;
     z-index: 2;
     font-size: 20px;
 }
@@ -454,7 +474,7 @@ body .page1 .list .tab{
     display: flex;
     flex-direction: column;
     width: 57%;
-    height: 41%;
+    height: 50%;
     padding-right: 119px;
 }
 .page4 .line .backimg .mail input{
