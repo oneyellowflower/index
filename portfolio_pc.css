@@ -313,7 +313,7 @@ body .page1 .list .tab{
     font-weight: 600;
 }
 .page3 .le_text .border{
-    word-break: keep-all;
+    flex-wrap: wrap;
     width: 100%;
 }
 .page3 .le_text .border p{
@@ -321,6 +321,7 @@ body .page1 .list .tab{
     border-radius: 25px;
     padding: 0 10px;
     text-decoration-line: none;
+    margin: 5px;
 }
 .page3 .ri_pic{
     width: 70%;
