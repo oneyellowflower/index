@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
@@ -24,11 +24,15 @@ body > div{
     align-items: center;
     justify-content: center;
 }
-body > div > div{
+body .line{
     width: 95%;
     height: 95%;
     border: 1px solid  #000;
     border-radius: 30px;
+}
+body .page1{
+    width: 100%;
+    height: 100vh;
 }
 body .page1 > div > p{
     background-image: url(/index/이미지/체크배경.jpg);
@@ -295,10 +299,10 @@ body .page1 .list .tab{
     height: 100%;
     margin-top: -2.8%;
     margin-right: -2.8%;
-    background-color: rgba(255, 255, 255, 1);
+    background-image: url(/index/이미지/반응형\ 배경.png);
 }
 .page3 .ri_pic > div{
-    background-image: url(/index/이미지/반응형\ 배경.png);
+    background-color: rgba(255, 255, 255, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
