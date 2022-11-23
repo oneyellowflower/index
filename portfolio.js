@@ -20,9 +20,8 @@ var swiper1 = new Swiper(".page", {
   document.querySelector('#contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // submit이벤트 막기
     const fromName = document.querySelector('input[name="from_name"]').value; // 전송자 이름 추출
-
-    emailjs.init("user_stJBqz5kKC5LyQt7X5M88"); // API keys
-    emailjs.sendForm('runauxlabsEmail', 'runauxlabsTemplate', this)
+    emailjs.init("T2lq3B83sC2b9TJvY"); // API keys
+    emailjs.sendForm('service_flower', 'template_sp7m06w', this)
         .then(function() {
             alert(`${fromName}님, 메일 전송 완료 되었습니다 :)`)
         }, function(error) {

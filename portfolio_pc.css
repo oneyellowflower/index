@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body{
@@ -235,7 +235,7 @@ body .page1 .list .tab{
     height: 95%;
     border: 1px solid  #000;
     border-radius: 30px;
-    z-index: 5;
+    z-index: 50;
 }
 .page3 .check{
     background-image: url(이미지/체크배경.jpg);
@@ -265,18 +265,25 @@ body .page1 .list .tab{
 }
 .page3 .sen{
     display: flex;
+    height: 100%;
+}
+.page3 .sen > div:first-child > div:first-child{
+    width: 100%;
+    height: 50%;
+    padding: 48% 9% 14% 49%;
+}
+.page3 .sen > div:first-child{
+    width: 40%;
+    height: 100%;
 }
 .page3 .sen img{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 30%;
-    left: 28%;
+    width: 200px;
+    height: 200px;
 }
 .page3 .le_text{
-    width: 40%;
-    height: 100vh;
-    padding: 35% 2% 0 2%;
+    width: 100%;
+    height: 50%;
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -325,9 +332,9 @@ body .page1 .list .tab{
 }
 .page3 .ri_pic{
     width: 70%;
-    height: 100%;
-    margin-top: -2.1%;
-    margin-right: -2.8%;
+    height: 103%;
+    margin-top: -2.2%;
+    margin-right: -2.1%;
     overflow: hidden;
 }
 .page3 .ri_pic > div{
@@ -365,13 +372,13 @@ body .page1 .list .tab{
     height: 110px;
     position: absolute;
     top: 62%;
-    left: 45%;
+    left: 7%;
     z-index: 2;
 }
 .page3 .ri_pic > div p:nth-child(3){
     position: absolute;
     top: 73%;
-    left: 43%;
+    left: 4%;
     z-index: 2;
     font-size: 20px;
 }
@@ -421,26 +428,35 @@ body .page1 .list .tab{
     height: 100%;
     display: flex;
 }
-.page4 .line .back{
-    width: 65%;
+.page4 .line .background{
     height: 100%;
+    width: 65%;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 30px 0 0 30px;
+}
+.page4 .line .backimg{
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
     background-image: url(이미지/3페이지배경화면.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.page4 .line .back .mail{
+.page4 .line .backimg .mail{
     display: flex;
     flex-direction: column;
     width: 57%;
     height: 41%;
     padding-right: 119px;
 }
-.page4 .line .back .mail input{
+.page4 .line .backimg .mail input{
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -450,20 +466,25 @@ body .page1 .list .tab{
     border-bottom: 1px solid #000;
     background: rgba(255, 255, 255, 0);
 }
-.page4 .line .back .mail textarea{
+.page4 .line .backimg .mail textarea{
     width: 100%;
     height: 100px;
     padding: 10px;
     margin: 0 0 10px 0;
     font-family: 'Noto Sans KR', sans-serif;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0);
     resize: none;
 }
-.page4 .line .back .mail > div:last-child{  
+.page4 .line .backimg .mail > div:last-child{  
     display: flex;
 }
-.page4 .line .back .mail > div > input{
+.page4 .line .backimg .mail > div > input{
     border: 1px solid #000;
+}
+.page4 .line .backimg .mail > div > input:hover{
+    background-color: #593D26;
+    color: #fff;
 }
 .page4 .line > div:last-child > div:last-child{
     width: 35%;
@@ -477,7 +498,7 @@ body .page1 .list .tab{
 .page4 .line > div:last-child > div:last-child > img{
     width: 200px;
     height: 300px;
-    margin: 56% 0 0 34%;
+    margin: 35% 0 0 34%;
 }
 .page4 .line .text{
     width: 70%;
