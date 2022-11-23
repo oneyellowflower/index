@@ -115,7 +115,7 @@ body .page1 .list .tab{
     height: 6%;
     background-size: contain;
     position: absolute;
-    left: -3%;
+    left: -4%;
     top: 2%;
     z-index: 10;
     display: flex;
@@ -208,13 +208,13 @@ body .page1 .list .tab{
 }
 /* ------------------------3페이지---------------------- */
 .page3{
-    position: absolute;
     width: 100%;
     height: 100vh;
 }
 .page3 > div{
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 .page3 .check{
     background-image: url(/index/이미지/체크배경.jpg);
@@ -223,7 +223,7 @@ body .page1 .list .tab{
     background-size: contain;
     position: absolute;
     left: -2%;
-    top: 4%;
+    top: 2%;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
@@ -293,6 +293,8 @@ body .page1 .list .tab{
 .page3 .ri_pic{
     width: 70%;
     height: 100%;
+    margin-top: -2.8%;
+    margin-right: -2.8%;
     background-color: rgba(255, 255, 255, 1);
 }
 .page3 .ri_pic > div{
@@ -330,7 +332,7 @@ body .page1 .list .tab{
     font-size: 20px;
 }
 /* --------------------------------4페이지------------------------------ */
-.page4{
+/* .page4{
     width: 100%;
     height: 100vh;
 }
@@ -348,9 +350,9 @@ body .page1 .list .tab{
     background-size: contain;
     position: absolute;
     left: -2%;
-    top: 4%;
+    top: 2%;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+} */
