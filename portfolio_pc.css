@@ -341,14 +341,15 @@ body .page1 .list .tab{
     background-image: url(이미지/반응형\ 배경.png);
     width: 100%;
     height: 100%;
-    transform: scale(1);
+    /* transform: scale(1); */
     transition: all linear 1s;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .page3 .ri_pic > div:hover{
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
+    background-size: 150%;
     transition: all linear 1s;
 }
 .page3 .ri_pic > div > div{
