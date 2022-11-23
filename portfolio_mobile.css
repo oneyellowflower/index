@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body .page1 > div > div:last-child{
+    background-image: url(이미지/1페이지배경화면_모바일.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+}
+/* --------------------------------2페이지---------------------------- */
+.page2 > div > div:nth-child(2){
+    width: 100%;
+}
+.page2 > div > div:last-child{
+    width: 100%;
+    height: 50%;
+    background-image: url(이미지/2페이지배경화면_모바일.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+    z-index: 2;
+}
+.page2 > div > div:nth-child(2) p{
+    font-size: 60px;
+    padding: 0;
+    top: 12%;
+    left: 6%;
+}
+.page2 > div .catch{
+    top: 22%;
+    left: 3%;
+    width: 70%;
+}
+.page2 > div .catch > div:first-child{
+    font-size: 30px;
+}
+.page2 > div .catch > div:last-child{
+    font-size: 16px;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+body .page1 > div > div:last-child{
+    background-image: url(이미지/1페이지배경화면_태블릿.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+}

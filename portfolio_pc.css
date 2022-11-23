@@ -84,6 +84,7 @@ body .page1 > div > div:last-child{
     width: 95%;
     height: 95%;
     background-image: url(이미지/1페이지\ 배경화면.png);
+    background-image: url(이미지/1페이지\ 배경화면.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,6 +98,7 @@ body .page1 .list{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    z-index: 5;
 }
 body .page1 .list .tab{
     font-size: 20px;
@@ -108,9 +110,10 @@ body .page1 .list .tab{
     border-radius: 15px 0 0 15px;
     padding: 13px 33px;
 }
-body .page1 .list .tab.on{
-    color: #000;
-    background: #807f7d;
+body .page1 .list .tab:hover{
+    background: #593D26;;
+    border: 2px solid #000;
+    cursor: pointer;
 }
 /* ------------------------------------------2페이지----------------------------------- */
 .page2{
@@ -300,7 +303,7 @@ body .page1 .list .tab.on{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+} 
 .page3 .le_text > div{
     display: flex;
     flex-direction: column;
@@ -325,7 +328,7 @@ body .page1 .list .tab.on{
 }
 .page3 .le_text > div > div > span{
     color: #AD7676;
-    font-size: 18px;
+    font-size: 15px;
 }
 .page3 .le_text > div > div > p{
     font-size: 20px;
@@ -533,7 +536,7 @@ body .page1 .list .tab.on{
 }
 .page4 .line .text > div > span{
     color: #AD7676;
-    font-size: 20px;
+    font-size: 15px;
 }
 .page4 .line .text > div > p{
     font-size: 20px;

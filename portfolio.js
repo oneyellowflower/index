@@ -12,16 +12,15 @@ var swiper1 = new Swiper(".page", {
 });
 
 $(".tab").click(function () {
-  var tab1 = $(this).index();
+  var tab1 = $(this).index()+1;
   $(this).addClass("on").siblings().removeClass("on");
-  swiper1.slideTo(0, 300);
+  swiper1.slideTo(tab1, 300);
 });
 
 document.querySelector('#contactForm').addEventListener('submit', function (event) {
-  event.preventDefault(); // submit이벤트 막기
-  const fromName = document.querySelector('input[name="from_name"]').value; // 전송자 이름 추출
-
-  emailjs.init("kzbfIgjDLXOPAFLOI"); // API keys
+  event.preventDefault(); 
+  const fromName = document.querySelector('input[name="from_name"]').value; 
+  emailjs.init("kzbfIgjDLXOPAFLOI");
   emailjs.sendForm('service_flower', 'template_flower', this)
     .then(function () {
       alert(`${fromName}님, 메일 전송 완료 되었습니다 :)`);
