@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body{
@@ -117,7 +117,7 @@ body .page1 .list .tab{
     position: absolute;
     left: -3%;
     top: 2%;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -205,4 +205,122 @@ body .page1 .list .tab{
     width: 95%;
     height: 95%;
     padding: 10px
+}
+/* ------------------------3페이지---------------------- */
+.page3{
+    position: absolute;
+}
+.page3 > div{
+    display: flex;
+    flex-direction: column;
+}
+.page3 .check{
+    background-image: url(/index/이미지/체크배경.jpg);
+    width: 101vw;
+    height: 6%;
+    background-size: contain;
+    position: absolute;
+    left: -2%;
+    top: 4%;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.page3 > div .check .tab{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    width: 12%;
+    height: 85%;
+    background: #9B8C79;
+    border: 2px solid #593D26;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3 .sen{
+    display: flex;
+}
+.page3 .sen img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+.page3 .le_text{
+    width: 40%;
+    height: 100vh;
+    padding-top: 35%;
+}
+.page3 .le_text > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.page3 .le_text > div > div{
+    display: flex;
+}
+.page3 .le_text > div > p{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.page3 .le_text > div > div > span{
+    color: #AD7676;
+}
+.page3 .le_text > div > div > p{
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-weight: 600;
+}
+.page3 .le_text .border{
+    word-break: keep-all;
+    width: 100%;
+}
+.page3 .le_text .border p{
+    border: 2px solid #4E2F2F;
+    border-radius: 25px;
+    padding: 0 10px;
+    text-decoration-line: none;
+}
+.page3 .ri_pic{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.page3 .ri_pic > div{
+    background-image: url(/index/이미지/반응형\ 배경.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3 .ri_pic > div p:nth-child(1){
+    background-image: url(/index/이미지/택2_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+}
+.page3 .ri_pic img{
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    top: 62%;
+    left: 45%;
+    z-index: 2;
+}
+.page3 .ri_pic > div p:nth-child(3){
+    position: absolute;
+    top: 72%;
+    left: 44%;
+    z-index: 2;
+    font-size: 20px;
 }
