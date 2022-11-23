@@ -8,11 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
-    background-image: url(/index/이미지/질감2.jpg);
+    background-image: url(이미지/질감2.jpg);
     font-family: 'Shippori Mincho B1', serif;
 }
 body > div{
@@ -38,7 +38,7 @@ body .page1{
     justify-content: center;
 }
 body .page1 > div > p{
-    background-image: url(/index/이미지/체크배경.jpg);
+    background-image: url(이미지/체크배경.jpg);
     width: 6%;
     height: 100vh;
     background-size: contain;
@@ -80,7 +80,7 @@ body .page1 > div > div:nth-child(2) > div .line{
 body .page1 > div > div:last-child{
     width: 95%;
     height: 95%;
-    background-image: url(/index/이미지/1페이지\ 배경화면.png);
+    background-image: url(이미지/1페이지\ 배경화면.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +123,7 @@ body .page1 .list .tab{
     position: absolute;
 }
 .page2 > div > div:first-child{
-    background-image: url(/index/이미지/체크배경.jpg);
+    background-image: url(이미지/체크배경.jpg);
     width: 100vw;
     height: 6%;
     background-size: contain;
@@ -154,7 +154,7 @@ body .page1 .list .tab{
 .page2 > div > div:nth-child(2){
     width: 50%;
     height: 100%;
-    background-image: url(/index/이모지/이모지_하트.gif);
+    background-image: url(이모지/이모지_하트.gif);
     background-repeat: no-repeat;
     background-position: bottom;
     position: absolute;
@@ -172,7 +172,7 @@ body .page1 .list .tab{
 .page2 > div > div:last-child{
     width: 100%;
     height: 100%;
-    background-image: url(/index/이미지/2페이지\ 배경화면.png);
+    background-image: url(이미지/2페이지\ 배경화면.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -238,7 +238,7 @@ body .page1 .list .tab{
     z-index: 5;
 }
 .page3 .check{
-    background-image: url(/index/이미지/체크배경.jpg);
+    background-image: url(이미지/체크배경.jpg);
     width: 100vw;
     height: 6%;
     background-size: contain;
@@ -276,7 +276,7 @@ body .page1 .list .tab{
 .page3 .le_text{
     width: 40%;
     height: 100vh;
-    padding-top: 35%;
+    padding: 35% 2% 0 2%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -327,21 +327,32 @@ body .page1 .list .tab{
     height: 100%;
     margin-top: -2.1%;
     margin-right: -2.8%;
-    background-image: url(/index/이미지/반응형\ 배경.png);
+    overflow: hidden;
 }
 .page3 .ri_pic > div{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url(이미지/반응형\ 배경.png);
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all linear 1s;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.page3 .ri_pic > div:hover{
+    transform: scale(1.5);
+    transition: all linear 1s;
+}
+.page3 .ri_pic > div > div{
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.page3 .ri_pic > div p:nth-child(1){
-    background-image: url(/index/이미지/택2_2.png);
+.page3 .ri_pic a{
+    background-image: url(이미지/택2_2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -379,7 +390,7 @@ body .page1 .list .tab{
     position: absolute;
 }
 .page4 .check{
-    background-image: url(/index/이미지/체크배경.jpg);
+    background-image: url(이미지/체크배경.jpg);
     width: 100vw;
     height: 6%;
     background-size: contain;
@@ -409,16 +420,49 @@ body .page1 .list .tab{
     height: 100%;
     display: flex;
 }
-.page4 .line > div:last-child > div:first-child{
+.page4 .line .back{
     width: 65%;
     height: 100%;
     background-color: #fff;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-image: url(이미지/3페이지배경화면.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-.page4 .line > div:last-child > div:first-child img{
+.page4 .line .back .mail{
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+    height: 41%;
+    padding-right: 119px;
+}
+.page4 .line .back .mail input{
     width: 100%;
-    height: 60%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: rgba(255, 255, 255, 0);
+}
+.page4 .line .back .mail textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid #d9d9d9;
+    resize: none;
+}
+.page4 .line .back .mail > div:last-child{  
+    display: flex;
+}
+.page4 .line .back .mail > div > input{
+    border: 1px solid #000;
 }
 .page4 .line > div:last-child > div:last-child{
     width: 35%;
@@ -428,7 +472,8 @@ body .page1 .list .tab{
     flex-direction: column;
     gap: 30px;
     align-items: center;
-}.page4 .line > div:last-child > div:last-child > img{
+}
+.page4 .line > div:last-child > div:last-child > img{
     width: 200px;
     height: 300px;
     margin: 56% 0 0 34%;
@@ -451,4 +496,9 @@ body .page1 .list .tab{
     font-size: 20px;
     text-decoration-line: underline;
     font-weight: 600;
+}
+.page4 .mail{
+    width: 100%;
+    height: 100%;
+    
 }

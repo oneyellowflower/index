@@ -111,9 +111,11 @@
                             </div>
                             <div class="ri_pic">
                                 <div>
-                                    <p></p>
-                                    <img src="/index/이미지/p_화살표.png" alt="다이어리스티커">
-                                    <p>Click !</p>
+                                    <div>
+                                        <a href="https://oneyellowflower.github.io/YG.Ent/index.html" target="_blank"></a>
+                                        <img src="/index/이미지/p_화살표.png" alt="다이어리스티커">
+                                        <p>Click !</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -129,8 +131,18 @@
                             </div>
                         </div>
                         <div>
-                            <div>
-                                <img src="/index/이미지/3페이지배경화면.png" alt="배경화면">
+                            <div class="back">
+                                <form id="contactForm" class="mail">
+                                    <!-- <form class="mail" action="mailto:runa.uxlabs@gmail.com" method="GET"> -->
+                                        <input type="hidden" name="contact_number">
+                                        <input type="text" id="from_name" name="from_name" placeholder="이름"/>
+                                        <input type="email" name="from_email" placeholder="이메일"/>
+                                        <textarea name="message" placeholder="내용"></textarea>
+                                        <div>
+                                            <input type="submit" value="SEND"/>
+                                            <input type="reset" value="RESET" />
+                                        </div>
+                                </form>
                             </div>
                             <div>
                                 <div class="text">
