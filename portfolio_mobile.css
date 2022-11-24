@@ -1,11 +1,12 @@
 @charset "UTF-8";
-body .page1 > div > div:nth-child(2){
+
+/* body .page1 > div > div:nth-child(2){
     left: 18%;
     right: 18%;
-}
+} */
 body .page1 > div > div:last-child{
-    background-image: url(이미지/1페이지배경화면_모바일.png);
-    background-size: contain;
+    background-image: url(이미지/1페이지배경화면_모바일3.png);
+    background-size: 90% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -13,9 +14,17 @@ body .page1 > div > div:last-child{
 }
 body .page1 > div > div:nth-child(2) > p{
     font-size: 50px;
+    /* font-size: 3rem; */
 }
-body .page1 > div > div:nth-child(2) > div {
+body .page1 > div > div:nth-child(2) > div{
     font-size: 20px;
+}
+body .page1 .list{
+    gap: 1px;
+}
+body .page1 .list .tab{
+    font-size: 16px;
+    padding: 8px 25px;
 }
 /* --------------------------------2페이지---------------------------- */
 .page2 > div > div:nth-child(2){
@@ -27,7 +36,7 @@ body .page1 > div > div:nth-child(2) > div {
 .page2 > div > div:last-child{
     width: 100%;
     height: 55%;
-    background-image: url(이미지/2페이지배경화면_모바일2.png);
+    background-image: url(이미지/2페이지배경화면_모바일3.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,4 +74,99 @@ body .page1 > div > div:nth-child(2) > div {
     top: 13%;
     left: 6%;
     z-index: 2;
+}
+.page2 > div > div:first-child .tab{
+    font-size: 16px;
+    padding: 8px 25px;
+}
+/* ------------------------3페이지------------------------- */
+.page3 > div .check .tab{
+    font-size: 16px;
+    padding: 8px 25px;
+}
+.page3 .sen{
+    display: flex;
+    flex-direction: column;
+}
+.page3 .sen > div:first-child {
+    width: 100%;
+    height: 50%;
+}
+.page3 .ri_pic{
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 30px 30px;
+}
+.page3 .ri_pic img{
+    top: 76%;
+    left: 17%;
+}
+.page3 .ri_pic > div p:nth-child(3){
+    font-size: 16px;
+    top: 88%;
+    left: 13%;
+}
+.page3 .sen > div:first-child > div:first-child{
+    /* padding: 15% 0 0 75%; */
+    position: absolute;
+    top: -34%;
+    right: -23%;
+}
+.page3 .ri_pic > div > div img{
+    width: 80px;
+    height: 80px;
+}
+.page3 .sen > div:first-child > div:first-child img{
+    width: 100px;
+    height: 100px;
+}
+.page3 .le_text{
+    gap: 10px;
+    padding: 15% 0 0 5%;
+}
+.page3 .le_text > div{
+    gap: 5px;
+}
+.page3 .le_text > div > p {
+    font-size: 14px;
+    width: 90%;
+}
+.page3 .le_text > div > div > p{
+    font-size: 14px;
+}
+/* -----------------4페이지------------------- */
+.page4 .tab{
+    font-size: 16px;
+    padding: 8px 25px;
+}
+.page4 .line > div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+.page4 .line .background{
+    height: 80%;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.page4 .line > div:last-child > div:last-child{
+    width: 100%;
+    height: 20%;
+    padding: 5%;
+    flex-direction: row;
+}
+.page4 .line > div:last-child > div:last-child > img{
+    width: 100px;
+    height: 100px;
+    margin: 0% 0 0 13%;
+}
+.page4 .line .text{
+    padding-left: 5%;
+}
+.page4 .line .backimg{
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.page4 .line .backimg .mail{
+    height: 60%;
+    padding: 0 100px 0 33px;
 }
