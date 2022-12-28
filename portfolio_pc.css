@@ -5,13 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 @import 'animate.css';
 
- 
+  
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body{
@@ -81,14 +81,14 @@ body .page1 > div > div:nth-child(2) > div .line{
     background-color: #4E2F2F;
 }
 body .page1 > div > div:last-child{
-    width: 95%;
+    width: 100%;
     height: 95%;
     background-image: url(이미지/1페이지\ 배경화면2.png);
-    background-size: contain;
+    background-size: 95% 100%;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: 2%;
+    /* right: 2%; */
 }
 body .page1 .list{
     position: absolute;
@@ -292,8 +292,8 @@ body .page1 .list .tab:hover{
 }
 .page3 .sen > div:first-child > div:first-child{
     width: 100%;
-    height: 40%;
-    padding: 48% 2% 15% 52%;
+    height: 30%;
+    padding: 44% 2% 15% 52%;
 }
 .page3 .sen > div:first-child{
     width: 40%;
@@ -309,12 +309,12 @@ body .page1 .list .tab:hover{
     padding: 0 2%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 } 
 .page3 .le_text > div{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 } 
 .page3 .le_text > div > div{
     display: flex;
@@ -479,13 +479,14 @@ body .page1 .list .tab:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5%;
 }
 .page4 .line .backimg .mail{
     display: flex;
     flex-direction: column;
-    width: 57%;
-    height: 50%;
-    padding-right: 119px;
+    width: 50%;
+    height: 79%;
+    padding: 5%;
 }
 .page4 .line .backimg .mail input{
     width: 100%;
@@ -509,6 +510,7 @@ body .page1 .list .tab:hover{
 }
 .page4 .line .backimg .mail > div:last-child{  
     display: flex;
+    width: 100%;
 }
 .page4 .line .backimg .mail > div > input{
     border: 1px solid #000;
@@ -520,16 +522,16 @@ body .page1 .list .tab:hover{
 .page4 .line > div:last-child > div:last-child{
     width: 35%;
     height: 30%;
-    padding-top: 20%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
 }
 .page4 .line > div:last-child > div:last-child > img{
-    width: 200px;
+    width: 30%;
     height: 300px;
-    margin: 35% 0 0 34%;
+    margin: 35% 0 0 40%;
 }
 .page4 .line .text{
     width: 70%;

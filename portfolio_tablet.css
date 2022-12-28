@@ -6,7 +6,7 @@
 } */
 body .page1 > div > div:nth-child(2) > p{
     font-size: 70px;
-} 
+}  
 body .page1 > div > div:last-child{
     background-image: url(이미지/1페이지배경화면_태블릿.png);
     /* background-size: contain; */
